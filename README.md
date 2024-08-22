@@ -25,9 +25,9 @@ Here we present our documentation for the upcoming Open Regional which includes 
 
 - Chasis
 
-The chassis of Chappie has gone through many different generations. Starting from 2023 when we competed with a Lego Spike we realised if we wanted to be taken seriously we had to completely renovate Chappie. Quickly we turned to using 3D printing since we could create any part and it could be recreated by anyone with access to a 3D printer. First, we set out to find some type of "case" for our components to mount them more easily to the yet-to-be-designed chassis. 
+Chappie's chassis has gone through many different generations. Starting from 2023 when we competed with a Lego Spike we realised if we wanted to be taken seriously we had to completely renovate Chappie. Quickly we turned to using 3D printing since we could create any part and anyone with access to a 3D printer could recreate it. First, we set out to find some "case" for our components to mount them more easily to the yet-to-be-designed chassis. 
 
-This proved useful but not time-efficient so when designing the first chassis we thought about putting together a breadboard to connect everything. We made holes in the first chassis which was a big box that at the top hosted the breadboard and the Arduino Mega. This didn't work out since adding the sensors and the wheels it would be too bulky. Then we noticed that the breadboard could be held upside down and saved space. So the "zero gravity base" was created, it was a hole where a breadboard could be placed upside down and hold all of its components in place and the Arduino and battery could be placed at the top. This idea was taken to nationals and proved inefficient since the distance sensors would slip out of their contact and give us wrong codes.
+This proved useful but not time-efficient so when designing the first chassis we thought about putting together a breadboard to connect everything. We made holes in the first chassis which was a big box that at the top hosted the breadboard and the Arduino Mega. This didn't work out since adding the sensors and the wheels would be too bulky. Then we noticed that the breadboard could be held upside down and saved space. So the "zero gravity base" was created, it was a hole where a breadboard could be placed upside down and hold all of its components in place and the Arduino and battery could be placed at the top. This idea was taken to nationals and proved inefficient since the distance sensors would slip out of their contact and give us the wrong codes.
 
 This is where our new design came into play, we kept it simple and used all the space available to accommodate all of the pieces.
 
@@ -45,7 +45,7 @@ Our driving motor is a TT DC Gearbox Motor which is very common and can be found
 
 The SG90 servo motor is a small and again easy-to-use servo with enough power to turn the wheels quickly and precisely. Again with good support.
 
-We decided to eliminate the breadboard since its only real purpose was holding the distance sensors and gyroscope in place, and connecting everything through the power rails. We could connect everything through solder, which would hold everything together forever and not fall out. The other connection were straight from the Arduino to the corresponding sensor through a male-to-female jumper wire.
+We decided to eliminate the breadboard since its only real purpose was holding the distance sensors and gyroscope in place, and connecting everything through the power rails. We could connect everything through solder, which would hold everything together forever and not fall out. The other connection was straight from the Arduino to the corresponding sensor through a male-to-female jumper wire.
 
 We used a switch to indicate whether the robot was going left or right and a push button to initiate the run attempt.
 
@@ -71,7 +71,9 @@ The battery size has caused an increase of problems for us, we struggled a lot t
 
 We also thought to keep it as it was before on top of the robot, but we did that with our previous model and regretted it hugely since it would unbalance Chappie greatly and make him difficult to carry around. 
 
-Our best option seems to be to increase the width of the first floor between the wheels since the battery is just about the same width. This idea would also prove useful since it gave the front wheels space to turn freely.
+Our best option seems to be to increase the width of the first floor between the wheels since the battery is just about the same width. This idea would also prove useful since it gave the front wheels space to turn freely.\
+
+The battery's weight was also too much for the small piece holding together the steering system, so we decided to move it back towards the driven wheels since they had a much stronger base.
 
 - Steering System
 
@@ -80,3 +82,13 @@ The driving motor did not cause many problems but the steering motor did, especi
 Now the motors have been placed inside to reduce Chappie’s height, better handle it in the corners, get better consistent reading from the light sensors, and make it easier to carry around.
 
 The steering system has now been changed to an Ackerman steering system so our wheels can remain in place and steer Chappie in tight places. This is in addition to changing our steering motor to a smaller servo, we found out that we do not need a strong beefy servo to steer Chappie. Now we have chosen the common 9g servo motor that can be commonly found.
+
+The steering system's column that held it together was too thin and would fold under the Chappie's weight from its other components. Our solution was simple, first, we re-added the other column that was removed to make space for the servo and reinforced the column at the bottom so it would be less prone to bending, and added another column on top so that if it tried to bend the wheel hubs inward it wouldn't be able to.
+
+The servo for the steering system has proved a bit annoying since its height and length are just barely out of reach from the steering joint thus forcing us to find different ways to place it (FIND SOLUTION HEIGHT). We fixed the length issue by turning the steering system so the joint would be looking inward rather than outward.
+
+- Light sensor
+
+The light sensor had to be at the bottom of Chappie and be as close to the ground as possible to get the most accurate readings. The problem we encountered was how were we going to get it through the base. 
+Our first idea was to do what we did on the last model, make holes so only the contacts could peek through and hold it with the cables; it had worked before but it was very annoying so we kept testing. Then we thought about making a big hole to put the sensor through and hold it in place with the cables and some type of tape/glue. This would be a bit better but would be annoying to put together and probably not very good long term.
+Our final idea and solution was to make a big enough hole to fit the hole sensor in and add pegs at the bottom to hold the sensor in place. This proved much easier to build and more efficient since the pins are more accessible and it stays in place without any other substance.
